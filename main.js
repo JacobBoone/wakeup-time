@@ -115,7 +115,7 @@ var fmchannelShell = $('<div class="fmchannel-shell">FM     88  92  96  102 106 
 			left: 50,
 			fontSize: 75,
 			// fontStyle: "digital"
-			fontFamily: 'BebasNeueRegular',
+			// fontFamily: 'BebasNeueRegular',
 		})
 
 		$(amchannelShell).css({
@@ -125,7 +125,7 @@ var fmchannelShell = $('<div class="fmchannel-shell">FM     88  92  96  102 106 
 			color: "white",
 			position: "absolute",
 			top: 130,
-			left: 55,
+			left: 100,
 			fontSize: 10
 		})
 
@@ -136,7 +136,7 @@ var fmchannelShell = $('<div class="fmchannel-shell">FM     88  92  96  102 106 
 			color: "white",
 			position: "absolute",
 			top: 145,
-			left: 55,
+			left: 100,
 			fontSize: 10
 		})
 });
