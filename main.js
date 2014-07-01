@@ -19,7 +19,7 @@ var autoShell = $('<div class="auto-shell">AUTO</div>');
 var amShell = $('<div class="am-shell">AM</div>'); 
 var pmShell = $('<div class="pm-shell">PM</div>'); 
 var clockscreenShell = $('<div class="clockscreen-shell"></div>'); 
-var indicatorShell = $('<div class="indicator-shell">.</div>'); 
+var indicatorShell = $('<img class="indicator-shell src="http://rpmbuild.joshr.com/more-icons/red_dot.gif">'); 
 	
 	// outer shell into the main div container
 	$('.container').append(outerShell)
@@ -27,7 +27,7 @@ var indicatorShell = $('<div class="indicator-shell">.</div>');
 	// puts inner shell into outershell
 	outerShell.append(innerShell);
 	innerShell.append(autoShell,amShell,pmShell,clockscreenShell)
-
+	clockscreenShell.append(indicatorShell)
 
 
 
@@ -70,8 +70,8 @@ var indicatorShell = $('<div class="indicator-shell">.</div>');
 			background: "black",
 			color: "white",
 			position: "absolute",
-			top: 140,
-			left: 55,
+			top: 70,
+			left: 28,
 			fontSize: 10
 		})
 
@@ -81,8 +81,8 @@ var indicatorShell = $('<div class="indicator-shell">.</div>');
 			background: "black",
 			color: "white",
 			position: "absolute",
-			top: 125,
-			left: 55,
+			top: 50,
+			left: 28,
 			fontSize: 10
 		})
 
@@ -95,7 +95,16 @@ var indicatorShell = $('<div class="indicator-shell">.</div>');
 			left: 50,
 		})
 
-
+		$(indicatorShell).css({
+			width: 20,
+			height: 50,
+			// background: "black",
+			// color: "red",
+			position: "absolute",
+			top: 0,
+			left: 5,
+			// fontSize: 50
+		})
 });
 	
 
